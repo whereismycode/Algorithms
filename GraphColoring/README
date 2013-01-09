@@ -1,0 +1,55 @@
+===============================================================================
+=								Graph Coloring								  =
+===============================================================================
+What is Graph Coloring ?
+	A way in which all the vertices of a given graph are assigned unique colors
+	so that no adjacent vertices share same color. Finding minimum number of
+	colors for assignment is the Graph Coloring problem. More info can be 
+	found on wiki : http://en.wikipedia.org/wiki/Graph_coloring
+===============================================================================
+
+Background
+	This problem was given as a final project in Advanced Algorithm course by
+	Suresh V at University of Utah.(input graph files are taken from his data
+	set) Even though I did some other project, I found coloring problem 
+	interesting and hence here I am!
+===============================================================================
+
+Building the project
+	Run 'make' at the root folder
+	Run 'make clean' to clean intermediate and output files
+===============================================================================
+
+Running the project
+	Run './gc.out <input graph file>'
+	For example './gc.out input/1.g'
+===============================================================================
+
+Format of the input Graph File
+	First line : <Number of Vertices> <Number of edges>
+	All other lines will contain : <Vertex Number> <Connected vertices separated by a space>
+	For example for the graph below
+	1--2--4
+	|  |  |
+	---3---
+	The graph file would look like
+	4 5
+	1 2 3 
+	2 1 3 4
+	3 1 2 4
+	4 2	3
+===============================================================================
+
+Version
+	Initial version - 0.1
+===============================================================================
+
+Features
+	RLF(Recursive Largest First) and Randomized RLF have been implemented.
+===============================================================================
+
+Issues
+	RLF implementation produces chromatic number off by few (less than 10). For example,
+	it produces 107 for a graph with chromatic number 100 while the randomized version
+	produces 105. Deterministic RLF should have been more accurate.	
+===============================================================================
