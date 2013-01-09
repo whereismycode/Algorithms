@@ -2,7 +2,7 @@
  * ============================================================================
  * This file contains implementation of Graph data structure and graph coloring
  * algorithm.
- * Copyright (C) 2013 Shashank
+ * Copyright (C) 2013 Shashank (shash2k5@gmail.com)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
