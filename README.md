@@ -1,4 +1,4 @@
 Algorithms
 ==========
 
-Contain implementation of interesting Algorithms
+Contains implementation of interesting Algorithms
